@@ -1,0 +1,564 @@
+<doctype html><html><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mini guide de survie</title>
+<style>
+/*Responsivité*/
+@media screen and (max-width:800px){
+body{font-size:1.25em};
+}
+@media screen and (min-width:801px){
+.lkan{margin:1em 10vw};
+}
+/*Bouton On Top*/
+a.on_top {position:fixed;bottom:2vw;right:2vw;font-size:calc(1em + 1.5vw);text-decoration:none}
+/*Agencement de la liste de vocabulaire*/
+dl.lvoc dt,dl.lvoc dd{display:inline}
+dl.lvoc dd {font-style:italic;margin-left:1.5rem}
+dl.lvoc div {padding-left:1rem;text-indent:-1rem}
+/*Agencement de la liste de mots à reconnaitre*/
+@media screen and (max-width:1100px){.col2 dl {display:grid;grid-template-columns:repeat(2,1fr)}}
+@media screen and (min-width:1101px){.col2 dl {display:grid;grid-template-columns:repeat(4,1fr)}}
+.col3 dl {display:grid;grid-template-columns:repeat(3,1fr)}
+.col5 dl {display:grid;grid-template-columns:repeat(5,1fr)}
+/*Formatage des blocs de kanji*/
+.lkan div {border:1px solid black}
+.cardin {margin:0.2em}
+dl.lkan dt {font-size:calc(1.5rem + 0.5vw);text-align:center}
+dl.lkan dt.kpt {font-size:calc(1rem + 0.5vw);font-style:bold;padding:0.25em 0}
+dl.lkan dd {font-size:100%;text-align:center;margin-left:0px}
+dl.lkan dd.lect,span.lect {font-style:italic;font-size:85%}
+/*Formatage*/
+body{font-family:Ubuntu, Verdana, sans-serif;font-size:calc(1em + 0.5vw)}
+.pt {font-size:70%}
+.gris {color:grey}
+a:link,a:visited {color:#c01c28}
+</style>
+</head>
+
+<body><h1 id=top>Mini guide de survie 🇯🇵</h1>
+<a class=on_top href=#top>⬆️</a>
+
+<h2>Table des matières</h2>
+<ul id=tdm>
+<li><a href=#voc>Liste de vocabulaire</a>
+<li><a href=#kanji>Les mots à reconnaitre</a>
+<li><a href=#chiffres>Les chiffres</a>
+<li><a href=#regles>Les règles à respecter</a>
+<li><a href=#kana>Les kanas, l'alphabet japonais</a>
+</ul>
+
+<h2 id=voc>Le vocabulaire</h2>
+<dl class=lvoc>
+<div><dt>Excusez moi<dd>Sumimasen</div>
+<div><dt>Pardon<dd>Gomen nassaï</div>
+<div><dt>Bonjour<dd>Konnitchiwa</div>
+<div><dt>Au revoir<dd>Sayonara</div>
+<div><dt>Merci<dd>Arigato gozaïmass</div>
+<div><dt>S'il vous plait<dd>Onegaï shimass</div>
+<div><dt>Non merci<dd>Kekkoo dess</div>
+<div><dt>Enchanté<dd>Hajime mashte</div>
+<div><dt>Je m'appelle ~<dd>Watashi no namae wa ~ dess.</div>
+<div><dt>Ça va<dd>Genki dess.</div>
+<div><dt>Oui<dd>H aïe</div>
+<div><dt>Non<dd class=pt>(En fait, ça se dit pas)</div>
+	<br> <!--Au resto/shopping-->
+<div><dt>Santé !<dd>Kampaï <span class=pt>(voir <a href=#tchin>règle n°25</a>)</span></div>
+<div><dt>Bon appétit<dd>Itadakimass</div>
+<div><dt>Après avoir mangé<dd>Gotchisoo sama deshta</div>
+<div><dt>C'est bon<dd>Oïshii</div>
+<div><dt>J'aime<dd>Suki dess</div>
+<div><dt>J'aime pas<dd>Kiraï dess</div>
+<div><dt>C'est joli<dd>Kiree dess</div>
+<div><dt>C'est mignon<dd>Kawaii dess</div>
+	<br> <!--Phrases préconstruites-->		
+<div><dt>Désolé, je ne parle pas japonais<dd>Sumimasen, nihongo wo wakarimasen.</div>
+<div><dt>Parlez vous anglais ?<dd>Eego wo hanashimass ka ?</div>
+<div><dt>Où sont les toilettes ?<dd>Toïre wa doko dess ka ?</div>
+<div><dt>Prenez-vous la CB ?<dd>Kureditto kaado wo tsukaemass ka ?</div>
+	<br> <!--Phrases blanches-->
+<div><dt>Où est ~ ?<dd>~ wa doko dess ka ?</div>
+<div><dt>~ coute combien ?<dd>~ wa ikura dess ka ?</div>
+<div><dt>Sans ~<dd>~ nashi</div>
+</dl>
+
+<h2 id=kanji>Les mots à reconnaitre</h2>
+<div class=col2>
+<dl class=lkan>
+<div><dt>禁止<dd class=lect>Kinshi<dd>Interdit</div>
+<div><dt>止まれ<dd class=lect>Tomare<dd>Arrêter</div>
+<div><dt>休<dd class=lect>Yasumi<dd>Repos</div>
+<div><dt>カメラ<dd class=lect>Kamera<dd>Camera</div>
+<div><dt>開<dd class=lect>Akeru<dd>Ouverture</div>
+<div><dt>閉<dd class=lect>Shimeru<dd>Fermeture</div>
+<div><dt>入口<dd class=lect>Iri gutchi<dd>Entrée</div>
+<div><dt>出口<dd class=lect>De gutchi<dd>Sortie</div>
+<div><dt>内<dd class=lect>Utchi<dd>Intérieur</div>
+<div><dt>外<dd class=lect>Soto<dd>Extérieur</div>
+<div><dt>押<dd class=lect>Osu<dd>Pousser</div>
+<div><dt>引<dd class=lect>Hiku<dd>Tirer</div>
+<div><dt>空<dd class=lect>Sora, Kuu<dd>Ciel, libre</div>
+<div><dt>満<dd class= lect>Man<dd>Plein</div>
+<div><dt>大<dd class=lect>Ooki, dai<dd>Grand</div>
+<div><dt>小<dd class=lect>Chiisaï, ko<dd>Petit</div>
+<div><dt>男<dd class=lect>Otoko<dd>Homme</div>
+<div><dt>女<dd class=lect>Onna<dd>Femme</div>
+<div><dt>パスポート<dd class=lect>Passupooto<dd>Passeport</div>
+<div><dt>運転免許<dd class=lect>Unten menkyo<dd>Permis de conduire</div>
+<div><dt>財布<dd class=lect>Saïfu<dd>Porte-feuile</div>
+<div><dt>地図<dd class=lect>Tchizu<dd>Carte</div>
+<div><dt>本<dd class=lect>Hon<dd>Livre</div>
+<div><dt>薬<dd class=lect>Kusuri<dd>Médicament</div>
+</dl>
+
+<h3>🚈 Transports et lieux</h3>
+<dl class=lkan> 
+<div><dt>空港<dd class=lect>Kuukoo<dd>Aéroport</div>
+<div><dt>駅<dd class=lect>Eki<dd>Gare</div>
+<div><dt>電車<dd class=lect>Densha<dd>Train</div>
+<div><dt>地下鉄<dd class=lect>Tchikatetsu<dd>Métro</div>
+<div><dt>車<dd class=lect>Kuruma<dd>Voiture</div>
+<div><dt>自転車<dd class=lect>Djitensha<dd>Vélo</div>
+<div><dt>バス<dd class=lect>Basu<dd>Bus</div>
+<div><dt>タクシー<dd class=lect>Takushii<dd>Taxi</div>
+<div><dt>レストラン<dd class=lect>Resutoran<dd>Restaurant</div>
+<div><dt>居酒屋<dd class=lect>Izakaya<dd>Izakaya, bistro</div>
+<div><dt>ホテル<dd class=lect>Hoteru<dd>Hotel</div>
+<div><dt>旅館<dd class=lect>Ryokan<dd>Ryokan, auberge</div>
+<div><dt>温泉<dd>Onsen</div>
+<div><dt>銭湯<dd class=lect>Sentoo<dd>Bains publics</div>
+<div><dt>トイレ<dd class=lect>Toïle<dd>Toilettes</div>
+<div><dt>部屋<dd class=lect>Heya<dd>Chambre</div>
+<div><dt>デパート<dd class=lect>Depaato<dd>Centre commerc.</div>
+<div><dt>コンビニ<dd class=lect>Konbini<dd>Konbini</div>
+<div><dt>交番<dd class=lect>Kooban<dd>Commissariat</div>
+<div><dt>大使館<dd class=lect>Taïshikan<dd>Ambassade</div>
+<div><dt>美術館<dd class=lect>Bijutsukan<dd>Musée</div>
+<div><dt>公園<dd class=lect>Kooèn<dd>Parc</div>
+<div><dt>海<dd class=lect>Umi<dd>Mer</div>
+<div><dt>ビーチ<dd class=lect>Biitchi<dd>Plage</div>
+<div><dt>森<dd class=lect>Mori<dd>Forêt</div>
+<div><dt>山<dd class=lect>Yama<dd>Montagne</div>
+</dl>
+
+<h3>🍜 La nouriture</h3>
+<dl class=lkan> 
+<div><dt>食べる<dd class=lect>Taberu<dd>Manger</div>
+<div><dt>飲む<dd class=lect>Nomu<dd>Boire</div>
+<div><dt>水<dd class=lect>Mizu<dd>Eau</div>
+<div><dt>お湯<dd class=lect>Oyu<dd>Eau chaude</div>
+<div><dt>酒<dd class=lect>Osake<dd>Alcool</div>
+<div><dt>アルコール<dd class=lect>Arukooru<dd>Alcool</div>
+<div><dt>茶<dd class=lect>Otcha<dd>Thé</div>
+<div><dt>コーヒー<dd class=lect>Koohii<dd>Café</div>
+<div><dt>日本酒<dd class=lect>Nihonshu<dd>Saké</div>
+<div><dt>ビイル<dd class=lect>Biiru<dd>Bière</div>
+<div><dt class=kpt>オレンジジュース<dd class=lect>Orenji juussu<dd>Jus d'orange</div>
+<div><dt>牛乳<dd class=lect>Gyuu nyuu<dd>Lait</div>
+<div><dt>肉<dd class=lect>Niku<dd>Viande</div>
+<div><dt>魚<dd class=lect>Sakana<dd>Poisson</div>
+<div><dt>卵<dd class=lect>Tamago<dd>Œuf</div>
+<div><dt>パン<dd class=lect>Pan<dd>Pain</div>
+<div><dt>コップ<dd class=lect>Coppu<dd>Verre</div>
+<div><dt>皿<dd class=lect>Sala<dd>Plat</div>
+<div><dt>箸<dd class=lect>Hashi<dd>Baguettes</div>
+<div><dt>フォーク<dd class=lect>Fooku<dd>Fourchette</div>
+<div><dt>ナイフ<dd class=lect>Naifu<dd>Couteau</div>
+<div><dt>スプーン<dd class=lect>Supuun<dd>Cuillère</div>
+</dl>
+
+<h3>🌦️ La météo</h3>
+<dl class=lkan> 
+<div><dt>天気<dd class=lect>Tenki<dd>Météo</div>
+<div><dt>晴れ<dd class=lect>Hare<dd>Beau temps</div>
+<div><dt>曇り<dd class=lect>Kumori<dd>Nuageux</div>
+<div><dt>雨<dd class=lect>Ame<dd>Pluie</div>
+<div><dt>傘<dd class=lect>Kassa<dd>Parapluie</div>
+<div><dt>台風<dd class=lect>Taïfuu<dd>Typhon</div>
+<div><dt>地震<dd class=lect>Djishin<dd>Séisme</div>
+<div><dt>津波<dd>Tsunami</div>
+</dl>
+
+<h3>💬 Les gens et les langues</h3>
+<dl class=lkan>
+<div><dt>日本語<dd class=lect>Nihon go<dd>Lang. japonaise</div>
+<div><dt>日本人<dd class=lect>Nihon djin<dd>Japonais</div>
+<div><dt>英語<dd class=lect>Ee go<dd>Lang. anglaise</div>
+<div><dt>外国人<dd class=lect>Gaikoku djin<dd>Étranger</div>
+<div><dt>フランス語<dd class=lect>Furansu go<dd>Lang. française</div>
+<div><dt>フランス人<dd class=lect>Furansu djin<dd>Français</div>
+<div><dt>中国人<dd class=lect>Tchuugoku djin<dd>Chinois</div>
+<div><dt>アメリカ人<dd class=lect>Amerika djin<dd>Américain</div>
+</dl>
+
+<h3>🚙 Sur la route</h3>
+<dl class=lkan>
+<div><dt>県道<dd class=lect>Kendoo<dd>Rte départementale</div>
+<div><dt>国道<dd class=lect>Kokudoo<dd>Route nationale</div>
+<div><dt>高速<dd class=lect>Koosoku<dd>Autoroute</div>
+<div><dt>出口<dd class=lect>De gutchi<dd>Sortie</div>
+<div><dt>止まれ<dd class=lect>Tomare<dd>Arrêtez-vous</div>
+<div><dt>徐行<dd class=lect>Djokoo<dd>Ralentir</div>
+</dl><p>Il y a certes certains doublons, mais ils sont spécifiques à la signalisation routière.</p>
+
+<h3>🔢 Trucs de comptable</h3>	
+<dl class=lkan> 
+<div><dt>価格<dd class=lect>Kakaku<dd>Prix</div>
+<div><dt>無料<dd class=lect>Muryoo<dd>Gratuit</div>
+<div><dt>本体価格<dd class=lect>Hontaï kakaku<dd>Prix HT</div>
+<div><dt>税込価格<dd class=lect>Zeekomi kakaku<dd>Prix TTC</div>
+</dl>
+</div>
+
+<h3>🧭 Les directions</h3>
+<div class=col3>
+<dl class=lkan> <!--Directions-->
+<div class=cardin><dt>北<dd class=lect>Kita<dd>Nord</div>
+<div><dt>上<dd class=lect>Ue<dd>Haut</div>
+<div class=cardin><dt>東<dd class=lect>Higashi<dd>Est</div>
+<div><dt>左<dd class=lect>Hidari<dd>Gauche</div>
+<div><dt>中<dd class=lect>Naka<dd>Milieu</div>
+<div><dt>右<dd class=lect>Migi<dd>Droite</div>
+<div class=cardin><dt>西<dd class=lect>Nishi<dd>Ouest</div>
+<div><dt>下<dd class=lect>Shita<dd>Bas</div>
+<div class=cardin><dt>南<dd class=lect>Minami<dd>Sud</div>
+</dl></div>
+
+<h2 id=chiffres>Les chiffres</h2>
+<div class=col3>
+<dl class=lkan>
+<div><dt>十<dd><span class=lect>djuu</span>&ensp;10</div>
+<div><dt>百<dd><span class=lect>hyaku</span>&ensp;100</div>
+<div><dt>千<dd><span class=lect>sen</span>&ensp;1000</div>
+<div><dt>七<dd><span class=lect>nana</span>&ensp;7</div>
+<div><dt>八<dd><span class=lect>hatchi</span>&ensp;8</div>
+<div><dt>九<dd><span class=lect>kyuu</span>&ensp;9</div>
+<div><dt>四<dd><span class=lect>yon</span>&ensp;4</div>
+<div><dt>五<dd><span class=lect>go</span>&ensp;5</div>
+<div><dt>六<dd><span class=lect>roku</span>&ensp;6</div>
+<div><dt>一<dd><span class=lect>itchi</span>&ensp;1</div>
+<div><dt>二<dd><span class=lect>ni</span>&ensp;2</div>
+<div><dt>三<dd><span class=lect>san</span>&ensp;3</div>
+<div><dt>〇　零<dd><span class=lect>zero, ree</span>&ensp;0</div>
+<div><dt>円　¥<dd><span class=lect>èn</span>&ensp;Yen</div>
+</dl>
+<dl class=lkan>
+<div><dt>年<dd class=lect>Nen<dd>Année</div>
+<div><dt>月<dd class=lect>Getsu<dd>Mois</div>
+<div><dt>日<dd class=lect>Nitchi<dd>Jour</div>
+<div><dt>時<dd class=lect>Dji, Toki<dd>Heure, temps</div>
+<div><dt>分<dd class=lect>Fun<dd>Minute</div>
+<div><dt>秒<dd class=lect>Byoo<dd>Seconde</div>
+<div><dt>昨日<dd class=lect>Kinoo<dd>Hier</div>
+<div><dt>今日<dd class=lect>Kyoo<dd>Aujourd'hui</div>
+<div><dt>明日<dd class=lect>Ashita<dd>Demain</div>
+</dl></div>
+
+<h2 id=regles>Les règles à respecter</h2>
+<p>&emsp; Règle n°1 :<br><s>Respecter les règles</s><br>Faire comme tout le monde</p>
+<p>&emsp; Règle n°2 : <br>Ne pas être un connard</p>
+<ol start=3>
+	<h3>Chez soi et chez les autres</h3>
+<li>On enlève ses chaussures avant d'entrer
+<li>On ne parle pas fort, les murs sont fins
+	<h3>Au onsen et aux bains</h3>
+<li>Quand on prend un bain, on se douche <strong>avant</strong> (même chez soi)
+<li>On évite d'avoir des tatouages
+<li>On met son kimono dans le bon sens : droite puis gauche, de sorte que la personne en face lise un 'y'
+	<h3>Dans la rue</h3>
+<li>On ne demande pas son chemin aux gens, on se contente d'avoir l'air paumé
+<li>On ne traverse pas au feu rouge
+<li>Les japonais ne tiennent pas la porte derrière eux, mais c'est quand même gentil de le faire
+<li>On ne mange pas et on ne boit pas en marchant
+<li>Les poubelles à côté des distributeurs et boutiques de street-food ne servent <strong>que</strong> pour ce qui en vient
+<li>Il y a des poubelles chez toi, ou au konbini
+<li>Quand on jete un truc au konbini, on achète un truc. C'est plus poli
+<li>On ne se mouche pas en public
+<li>On met un masque quand on est malade
+<li>On ne porte pas de couteau sur soi. Encore moins s'il fait plus de 8 cm
+<li>On évite de finir en garde à vue. Genre, vraiment
+<li>On évite de parler japonais avec les policiers quand ils te demandent quelque chose. Si tu leur demande de l'aide, là tu peux
+	<h3>Dans les transports</h3>
+<li>On passe son ticket/carte de métro, même si les portiques sont ouverts
+<li>On passe son ticket/carte à l'entrée ET à la sortie
+<li>On garde la gauche dans les escalators, sauf à Osaka où on garde la droite
+<li>On laisse les gens sortir avant de rentrer
+<li>On fait la queue sur le quai
+	<h3>Au restaurant</h3>
+<li id=tchin>On ne dit pas tchin tchin, <span class=pt>gros dégueulasse</span>
+<li>On ne se passe pas la nourriture de baguette en baguette
+<li>On ne plante pas ses baguetttes dans le riz
+<li>On se déplace pas les plats avec ses baguettes
+<li>Attention aux pourboires. Il parait que ça se fait pas; mais en fait si. C'est compliqué T_T
+	<h3>Sur la route <span class=pt>(Pour ceux qui ont le permis)</span></h3>
+<li>Le code de la route est globalement similaire à la France. <strong>À quelques subtilités près.</strong>
+<li>N'oubliez pas de lire ou relire le livre prévu à cet effet
+<li>Respectez le code de la route, la maréchaussée est intraitable
+<li>Il faut (globalement) conduire comme Hadrien. <span class=pt>Bon courage</span>
+<li>...
+<li>On ne critique pas de la manière de conduire des autres. Sauf si c'est grave. Sinon, le perdant prend un gage
+<li>On ne boit <strong>pas</strong> avant de conduire, du tout
+<li>On roule à gauche. Mais ça, vous le saviez déjà
+</ol>
+<p>La règle n°1 prévaut sur toutes les autres.</p>
+
+<h2 id=kana>Les Kanas</h2>
+	<h3>Les Hiraganas</h3>
+<div class=col5>
+<dl class=lkan>
+<div><dt>あ<dd>a</div>
+<div><dt>い<dd>i</div>
+<div><dt>う<dd>u</div>
+<div><dt>え<dd>e</div>
+<div><dt>お<dd>o</div>
+<div><dt>か<dd>ka</div>
+<div><dt>き<dd>ki</div>
+<div><dt>く<dd>ku</div>
+<div><dt>け<dd>ke</div>
+<div><dt>こ<dd>ko</div>
+<div><dt>が<dd>ga</div>
+<div><dt>ぎ<dd>gi</div>
+<div><dt>ぐ<dd>gu</div>
+<div><dt>げ<dd>ge</div>
+<div><dt>ご<dd>go</div>
+<div><dt>さ<dd>sa</div>
+<div><dt>し<dd>shi</div>
+<div><dt>す<dd>su</div>
+<div><dt>せ<dd>se</div>
+<div><dt>そ<dd>so</div>
+<div><dt>ざ<dd>za</div>
+<div><dt>じ<dd>dji</div>
+<div><dt>ず<dd>zu</div>
+<div><dt>ぜ<dd>ze</div>
+<div><dt>ぞ<dd>zo</div>
+<div><dt>た<dd>ta</div>
+<div><dt>ち<dd>tchi</div>
+<div><dt>つ<dd>tsu</div>
+<div><dt>て<dd>te</div>
+<div><dt>と<dd>to</div>
+<div><dt>だ<dd>da</div>
+<div><dt>ぢ<dd>dji</div>
+<div><dt>づ<dd>dzu</div>
+<div><dt>で<dd>de</div>
+<div><dt>ど<dd>do</div>
+<div><dt>な<dd>na</div>
+<div><dt>に<dd>ni</div>
+<div><dt>ぬ<dd>nu</div>
+<div><dt>ね<dd>ne</div>
+<div><dt>の<dd>no</div>
+<div><dt>は<dd>ha</div>
+<div><dt>ひ<dd>hi</div>
+<div><dt>ふ<dd>fu</div>
+<div><dt>へ<dd>he</div>
+<div><dt>ほ<dd>ho</div>
+<div><dt>ば<dd>ba</div>
+<div><dt>び<dd>bi</div>
+<div><dt>ぶ<dd>bu</div>
+<div><dt>べ<dd>be</div>
+<div><dt>ぼ<dd>bo</div>
+<div><dt>ぱ<dd>pa</div>
+<div><dt>ぴ<dd>pi</div>
+<div><dt>ぷ<dd>pu</div>
+<div><dt>ぺ<dd>pe</div>
+<div><dt>ぽ<dd>po</div>
+<div><dt>ま<dd>ma</div>
+<div><dt>み<dd>mi</div>
+<div><dt>む<dd>mu</div>
+<div><dt>め<dd>me</div>
+<div><dt>も<dd>mo</div>
+<div><dt>や<dd>ya</div>
+<div></div>
+<div><dt>ゆ<dd>yu</div>
+<div></div>
+<div><dt>よ<dd>yo</div>
+<div><dt>ら<dd>ra</div>
+<div><dt>り<dd>ri</div>
+<div><dt>る<dd>ru</div>
+<div><dt>れ<dd>re</div>
+<div><dt>ろ<dd>ro</div>
+<div><dt>わ<dd>wa</div>
+<div></div>
+<div></div>
+<div></div>
+<div><dt>を<dd>wo</div>
+<div><dt>ん<dd>n</div>
+</dl></div>
+<div class=col3>
+<dl class=lkan>
+<div><dt>きゃ<dd>kya</div>
+<div><dt>きゅ<dd>kyu</div>
+<div><dt>きょ<dd>kyo</div>
+<div><dt>ぎゃ<dd>gya</div>
+<div><dt>ぎゅ<dd>gyu</div>
+<div><dt>ぎょ<dd>gyo</div>
+<div><dt>しゃ<dd>sha</div>
+<div><dt>しゅ<dd>shu</div>
+<div><dt>しょ<dd>sho</div>
+<div><dt>じゃ<dd>dja</div>
+<div><dt>じゅ<dd>dju</div>
+<div><dt>じょ<dd>djo</div>
+<div><dt>ちゃ<dd>tcha</div>
+<div><dt>ちゅ<dd>tchu</div>
+<div><dt>ちょ<dd>tcho</div>
+<div><dt>にゃ<dd>nya</div>
+<div><dt>にゅ<dd>nyu</div>
+<div><dt>にょ<dd>nyo</div>
+<div><dt>ひゃ<dd>hya</div>
+<div><dt>ひゅ<dd>hyu</div>
+<div><dt>ひょ<dd>hyo</div>
+<div><dt>びゃ<dd>bya</div>
+<div><dt>びゅ<dd>byu</div>
+<div><dt>びょ<dd>byo</div>
+<div><dt>ぴゃ<dd>pya</div>
+<div><dt>ぴゅ<dd>pyu</div>
+<div><dt>ぴょ<dd>pyo</div>
+<div><dt>みゃ<dd>mya</div>
+<div><dt>みゅ<dd>myu</div>
+<div><dt>みょ<dd>myo</div>
+<div><dt>りゃ<dd>rya</div>
+<div><dt>りゅ<dd>ryu</div>
+<div><dt>りょ<dd>ryo</div>
+</dl></div>
+<p>Tracé des hiraganas : <a href="https://docs.google.com/document/d/1J4qKmTI7MnZ1b49aTty9Z9AQzoAX6ZtlBztSPbq49As">Fiche de Julien Fontanier</a></p>
+	<h3>Les Katakanas</h3>
+<div class=col5>
+<dl class=lkan>
+<div><dt>ア<dd>A</div>
+<div><dt>イ<dd>I</div>
+<div><dt>ウ<dd>U</div>
+<div><dt>エ<dd>E</div>
+<div><dt>オ<dd>O</div>
+<div><dt>カ<dd>KA</div>
+<div><dt>キ<dd>KI</div>
+<div><dt>ク<dd>KU</div>
+<div><dt>ケ<dd>KE</div>
+<div><dt>コ<dd>KO</div>
+<div><dt>ガ<dd>GA</div>
+<div><dt>ギ<dd>GI</div>
+<div><dt>グ<dd>GU</div>
+<div><dt>ゲ<dd>GE</div>
+<div><dt>ゴ<dd>GO</div>
+<div><dt>サ<dd>SA</div>
+<div><dt>シ<dd>SHI</div>
+<div><dt>ス<dd>SU</div>
+<div><dt>セ<dd>SE</div>
+<div><dt>ソ<dd>SO</div>
+<div><dt>ザ<dd>ZA</div>
+<div><dt>ジ<dd>DJI</div>
+<div><dt>ズ<dd>ZU</div>
+<div><dt>ゼ<dd>ZE</div>
+<div><dt>ゾ<dd>ZO</div>
+<div><dt>タ<dd>TA</div>
+<div><dt>チ<dd>TCHI</div>
+<div><dt>ツ<dd>TSU</div>
+<div><dt>テ<dd>TE</div>
+<div><dt>ト<dd>TO</div>
+<div><dt>ダ<dd>DA</div>
+<div><dt>ヂ<dd>DJI</div>
+<div><dt>ヅ<dd>DZU</div>
+<div><dt>デ<dd>DE</div>
+<div><dt>ド<dd>DO</div>
+<div><dt>ナ<dd>NA</div>
+<div><dt>ニ<dd>NI</div>
+<div><dt>ヌ<dd>NU</div>
+<div><dt>ネ<dd>NE</div>
+<div><dt>ノ<dd>NO</div>
+<div><dt>ハ<dd>HA</div>
+<div><dt>ヒ<dd>HI</div>
+<div><dt>フ<dd>FU</div>
+<div><dt>ヘ<dd>HE</div>
+<div><dt>ホ<dd>HO</div>
+<div><dt>バ<dd>BA</div>
+<div><dt>び<dd>BI</div>
+<div><dt>ブ<dd>BU</div>
+<div><dt>ベ<dd>BE</div>
+<div><dt>ボ<dd>BO</div>
+<div><dt>パ<dd>PA</div>
+<div><dt>ピ<dd>PI</div>
+<div><dt>プ<dd>PU</div>
+<div><dt>ペ<dd>PE</div>
+<div><dt>ポ<dd>PO</div>
+<div><dt>マ<dd>MA</div>
+<div><dt>ミ<dd>MI</div>
+<div><dt>ム<dd>MU</div>
+<div><dt>メ<dd>ME</div>
+<div><dt>モ<dd>MO</div>
+<div><dt>ヤ<dd>YA</div>
+<div></div>
+<div><dt>ユ<dd>YU</div>
+<div></div>
+<div><dt>ヨ<dd>YO</div>
+<div><dt>ラ<dd>RA</div>
+<div><dt>リ<dd>RI</div>
+<div><dt>ル<dd>RU</div>
+<div><dt>レ<dd>RE</div>
+<div><dt>ロ<dd>RO</div>
+<div><dt>ワ<dd>WA</div>
+<div></div>
+<div></div>
+<div></div>
+<div><dt>ヲ<dd>WO</div>
+<div><dt>ン<dd>N</div>
+</dl></div>
+<div class=col3>
+<dl class=lkan>
+<div><dt>キャ<dd>KYA</div>
+<div><dt>キュ<dd>KYU</div>
+<div><dt>キョ<dd>KYO</div>
+<div><dt>ギャ<dd>GYA</div>
+<div><dt>ギュ<dd>GYU</div>
+<div><dt>ギョ<dd>GYO</div>
+<div><dt>シャ<dd>SHA</div>
+<div><dt>シュ<dd>SHU</div>
+<div><dt>ショ<dd>SHO</div>
+<div><dt>ジャ<dd>DJA</div>
+<div><dt>ジュ<dd>DJU</div>
+<div><dt>ジョ<dd>DJO</div>
+<div><dt>チャ<dd>TCHA</div>
+<div><dt>チュ<dd>TCHU</div>
+<div><dt>チョ<dd>TCHO</div>
+<div><dt>ニャ<dd>NYA</div>
+<div><dt>ニュ<dd>NYU</div>
+<div><dt>ニョ<dd>NYO</div>
+<div><dt>ヒャ<dd>HYA</div>
+<div><dt>ヒュ<dd>HYU</div>
+<div><dt>ヒョ<dd>HYO</div>
+<div><dt>ビャ<dd>BYA</div>
+<div><dt>ビュ<dd>BYU</div>
+<div><dt>ビョ<dd>BYO</div>
+<div><dt>ピャ<dd>PYA</div>
+<div><dt>ピュ<dd>PYU</div>
+<div><dt>ピョ<dd>PYO</div>
+<div><dt>ミャ<dd>MYA</div>
+<div><dt>ミュ<dd>MYU</div>
+<div><dt>ミョ<dd>MYO</div>
+<div><dt>リャ<dd>RYA</div>
+<div><dt>リュ<dd>RYU</div>
+<div><dt>リョ<dd>RYO</div>
+</dl></div>
+<p>Tracé des katakanas : <a href="https://docs.google.com/document/d/1aVrjmUMEUvCuOB3gIhpoXsOTf-tY9FuyODctlhrrkYg">Fiche de Julien Fontanier</a></p>
+	<h3>Règles spéciales des kanas</h3>
+<div class=col5>
+<dl class=lkan>
+<div><dt>かあ<dd>kaa</div>
+<div><dt>きい<dd>kii</div>
+<div><dt>くう<dd>kuu</div>
+<div><dt>け<strong>い</strong><dd>kee</div>
+<div><dt>こ<strong>う</strong><dd>koo</div>
+<div><dt>っか<dd>kka</div>
+<p>&emsp;etc...</p>
+</dl></div>
+	<h3>La prononciation des phonèmes</h3>
+<p>Chaque consonne et chaque voyelle à une manière de se prononcer, ne varie que très peu, et surtout <strong>ne se dyphtonguent pas</strong> contrairement au français. Voici la prononciation respective des cas les moins évidents:</p><ul>
+<li>e : 'é' ou 'è' dans certaines circonstances.
+<li>g : 'gu' comme dans gué.
+<li>s : 'ss' et jamais 'z'.
+<li>j : 'dj' comme dans Jack. 
+<li>chi : 'tchi' car il est dans la ligne des 't'.
+<li>shi : 'shi' comme dans chien.
+<li>h : le h doit être aspiré.
+<li>r : il doit être roulé très fort et presque ressembler à un 'l'.
+<li>wo : le 'w' est presque inaudible et se prononce presque comme un 'o'.
+<li>n : le 'n/ん' à la toute fin de l'alphabet est une consonne nasale, qui se prononce donc plus avec le nez que la bouche.
+</ul>
+<br><br></body></html>
