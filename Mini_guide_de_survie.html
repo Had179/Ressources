@@ -12,6 +12,7 @@ body{font-size:1.25em};
 }
 /*Bouton On Top*/
 a.on_top {position:fixed;bottom:2vw;right:2vw;font-size:calc(1em + 1.5vw);text-decoration:none}
+ul p {margin:0} ul p.tdmem a {text-decoration:none}
 /*Agencement de la liste de vocabulaire*/
 dl.lvoc dt,dl.lvoc dd{display:inline}
 dl.lvoc dd {font-style:italic;margin-left:1.5rem}
@@ -42,7 +43,8 @@ a:link,a:visited {color:#c01c28}
 <h2>Table des matières</h2>
 <ul id=tdm>
 <li><a href=#voc>Liste de vocabulaire</a>
-<li><a href=#kanji>Les mots à reconnaitre</a>
+<li><a href=#kanji>Les mots à reconnaitre</a></li>
+<p class=tdmem><a href=#rtran>🚈</a> <a href=#rnour>🍜</a> <a href=#rmet>🌦️</a> <a href=#rgens>💬</a> <a href=#rrout>🚙</a> <a href=#rcpta>🔢</a> <a href=#rdir>🧭</a></p>
 <li><a href=#chiffres>Les chiffres</a>
 <li><a href=#regles>Les règles à respecter</a>
 <li><a href=#kana>Les kanas, l'alphabet japonais</a>
@@ -63,7 +65,7 @@ a:link,a:visited {color:#c01c28}
 <div><dt>Oui<dd>H aïe</div>
 <div><dt>Non<dd class=pt>(En fait, ça se dit pas)</div>
 	<br> <!--Au resto/shopping-->
-<div><dt>Santé !<dd>Kampaï <span class=pt>(voir <a href=#tchin>règle n°25</a>)</span></div>
+<div><dt>Santé !<dd>Kampaï <span class=pt>(voir <a href=#tchin>règle n°26</a>)</span></div>
 <div><dt>Bon appétit<dd>Itadakimass</div>
 <div><dt>Après avoir mangé<dd>Gotchisoo sama deshta</div>
 <div><dt>C'est bon<dd>Oïshii</div>
@@ -111,7 +113,7 @@ a:link,a:visited {color:#c01c28}
 <div><dt>薬<dd class=lect>Kusuri<dd>Médicament</div>
 </dl>
 
-<h3>🚈 Transports et lieux</h3>
+<h3 id=rtran>🚈 Transports et lieux</h3>
 <dl class=lkan> 
 <div><dt>空港<dd class=lect>Kuukoo<dd>Aéroport</div>
 <div><dt>駅<dd class=lect>Eki<dd>Gare</div>
@@ -125,12 +127,12 @@ a:link,a:visited {color:#c01c28}
 <div><dt>居酒屋<dd class=lect>Izakaya<dd>Izakaya, bistro</div>
 <div><dt>ホテル<dd class=lect>Hoteru<dd>Hotel</div>
 <div><dt>旅館<dd class=lect>Ryokan<dd>Ryokan, auberge</div>
-<div><dt>温泉<dd>Onsen</div>
-<div><dt>銭湯<dd class=lect>Sentoo<dd>Bains publics</div>
 <div><dt>トイレ<dd class=lect>Toïle<dd>Toilettes</div>
 <div><dt>部屋<dd class=lect>Heya<dd>Chambre</div>
-<div><dt>デパート<dd class=lect>Depaato<dd>Centre commerc.</div>
+<div><dt>温泉<dd>Onsen</div>
 <div><dt>コンビニ<dd class=lect>Konbini<dd>Konbini</div>
+<div><dt>スパー<dd class=lect>Supaa<dd>Supermarché</div>
+<div><dt>デパート<dd class=lect>Depaato<dd>Centre commerc.</div>
 <div><dt>交番<dd class=lect>Kooban<dd>Commissariat</div>
 <div><dt>大使館<dd class=lect>Taïshikan<dd>Ambassade</div>
 <div><dt>美術館<dd class=lect>Bijutsukan<dd>Musée</div>
@@ -141,7 +143,7 @@ a:link,a:visited {color:#c01c28}
 <div><dt>山<dd class=lect>Yama<dd>Montagne</div>
 </dl>
 
-<h3>🍜 La nouriture</h3>
+<h3 id=rnour>🍜 La nouriture</h3>
 <dl class=lkan> 
 <div><dt>食べる<dd class=lect>Taberu<dd>Manger</div>
 <div><dt>飲む<dd class=lect>Nomu<dd>Boire</div>
@@ -167,7 +169,7 @@ a:link,a:visited {color:#c01c28}
 <div><dt>スプーン<dd class=lect>Supuun<dd>Cuillère</div>
 </dl>
 
-<h3>🌦️ La météo</h3>
+<h3 id=rmet>🌦️ La météo</h3>
 <dl class=lkan> 
 <div><dt>天気<dd class=lect>Tenki<dd>Météo</div>
 <div><dt>晴れ<dd class=lect>Hare<dd>Beau temps</div>
@@ -179,7 +181,7 @@ a:link,a:visited {color:#c01c28}
 <div><dt>津波<dd>Tsunami</div>
 </dl>
 
-<h3>💬 Les gens et les langues</h3>
+<h3 id=rgens>💬 Les gens et les langues</h3>
 <dl class=lkan>
 <div><dt>日本語<dd class=lect>Nihon go<dd>Lang. japonaise</div>
 <div><dt>日本人<dd class=lect>Nihon djin<dd>Japonais</div>
@@ -191,7 +193,7 @@ a:link,a:visited {color:#c01c28}
 <div><dt>アメリカ人<dd class=lect>Amerika djin<dd>Américain</div>
 </dl>
 
-<h3>🚙 Sur la route</h3>
+<h3 id=rrout>🚙 Sur la route</h3>
 <dl class=lkan>
 <div><dt>県道<dd class=lect>Kendoo<dd>Rte départementale</div>
 <div><dt>国道<dd class=lect>Kokudoo<dd>Route nationale</div>
@@ -201,7 +203,7 @@ a:link,a:visited {color:#c01c28}
 <div><dt>徐行<dd class=lect>Djokoo<dd>Ralentir</div>
 </dl><p>Il y a certes certains doublons, mais ils sont spécifiques à la signalisation routière.</p>
 
-<h3>🔢 Trucs de comptable</h3>	
+<h3 id=rcpta>🔢 Trucs de comptable</h3>	
 <dl class=lkan> 
 <div><dt>価格<dd class=lect>Kakaku<dd>Prix</div>
 <div><dt>無料<dd class=lect>Muryoo<dd>Gratuit</div>
@@ -210,7 +212,7 @@ a:link,a:visited {color:#c01c28}
 </dl>
 </div>
 
-<h3>🧭 Les directions</h3>
+<h3 id=rdir>🧭 Les directions</h3>
 <div class=col3>
 <dl class=lkan> <!--Directions-->
 <div class=cardin><dt>北<dd class=lect>Kita<dd>Nord</div>
@@ -263,6 +265,7 @@ a:link,a:visited {color:#c01c28}
 <li>On ne parle pas fort, les murs sont fins
 	<h3>Au onsen et aux bains</h3>
 <li>Quand on prend un bain, on se douche <strong>avant</strong> (même chez soi)
+<li>On ne nage pas, ni ne plonge, ni ne s'immerge. On se détend juste
 <li>On évite d'avoir des tatouages
 <li>On met son kimono dans le bon sens : droite puis gauche, de sorte que la personne en face lise un 'y'
 	<h3>Dans la rue</h3>
@@ -271,7 +274,7 @@ a:link,a:visited {color:#c01c28}
 <li>Les japonais ne tiennent pas la porte derrière eux, mais c'est quand même gentil de le faire
 <li>On ne mange pas et on ne boit pas en marchant
 <li>Les poubelles à côté des distributeurs et boutiques de street-food ne servent <strong>que</strong> pour ce qui en vient
-<li>Il y a des poubelles chez toi, ou au konbini
+<li>Il y a des poubelles chez toi, ou, au pire, au konbini
 <li>Quand on jete un truc au konbini, on achète un truc. C'est plus poli
 <li>On ne se mouche pas en public
 <li>On met un masque quand on est malade
@@ -294,8 +297,8 @@ a:link,a:visited {color:#c01c28}
 <li>Le code de la route est globalement similaire à la France. <strong>À quelques subtilités près.</strong>
 <li>N'oubliez pas de lire ou relire le livre prévu à cet effet
 <li>Respectez le code de la route, la maréchaussée est intraitable
-<li>Il faut (globalement) conduire comme Hadrien. <span class=pt>Bon courage</span>
 <li>...
+<li>Il faut (globalement) conduire comme Hadrien. <span class=pt>Bon courage</span>
 <li>On ne critique pas de la manière de conduire des autres. Sauf si c'est grave. Sinon, le perdant prend un gage
 <li>On ne boit <strong>pas</strong> avant de conduire, du tout
 <li>On roule à gauche. Mais ça, vous le saviez déjà
