@@ -6,9 +6,11 @@
 /*Responsivité*/
 @media screen and (max-width:800px){
 body{font-size:1.25em};
+.lcv{column-count:2}
 }
 @media screen and (min-width:801px){
 .lkan{margin:1em 10vw};
+.lcv{column-width:200px}
 }
 /*Bouton On Top*/
 a.on_top {position:fixed;bottom:2vw;right:2vw;font-size:calc(1em + 1.5vw);text-decoration:none}
@@ -29,6 +31,11 @@ dl.lkan dt {font-size:calc(1.5rem + 0.5vw);text-align:center}
 dl.lkan dt.kpt {font-size:calc(1rem + 0.5vw);font-style:bold;padding:0.25em 0}
 dl.lkan dd {font-size:100%;text-align:center;margin-left:0px}
 dl.lkan dd.lect,span.lect {font-style:italic;font-size:85%}
+/*Table de conv*/
+.lcv{column-width:2}
+table {font-size:1em}
+th,td{font-weight:normal;text-align:right}
+.lcv tr th::after{content:" = "}
 /*Formatage*/
 body{font-family:Ubuntu, Verdana, sans-serif;font-size:calc(1em + 0.5vw)}
 .pt {font-size:70%}
@@ -46,6 +53,7 @@ a:link,a:visited {color:#c01c28}
 <li><a href=#kanji>Les mots à reconnaitre</a></li>
 <p class=tdmem><a href=#kanji_transp>🚈</a> <a href=#kanji_nourr>🍜</a> <a href=#kanji_meteo>🌦️</a> <a href=#kanji_gens>💬</a> <a href=#kanji_route>🚙</a> <a href=#kanji_compta>🔢</a> <a href=#kanji_direc>🧭</a></p>
 <li><a href=#chiffres>Les chiffres</a>
+<li><a href=#conv>Conversion Yen-Euro</a>
 <li><a href=#regles>Les règles à respecter</a>
 <li><a href=#kana>Les kanas, l'alphabet japonais</a>
 </ul>
@@ -255,6 +263,30 @@ a:link,a:visited {color:#c01c28}
 <div><dt>今日<dd class=lect>Kyoo<dd>Aujourd'hui</div>
 <div><dt>明日<dd class=lect>Ashita<dd>Demain</div>
 </dl></div>
+
+<h2 id=conv>Table de conversion Yen-Euro</h2>
+<div class=lcv><table>
+<tr><th>0,50 €</td><td>80 ¥</td></tr>
+<tr><th><strong>1 €</strong></td><td><strong>160 ¥</strong></td></tr>
+<tr><th>1,50 €</td><td>240 ¥</td></tr>
+<tr><th>2 €</td><td>320 ¥</td></tr>
+<tr><th>3 €</td><td>480 ¥</td></tr>
+<tr><th>4 €</td><td>640 ¥</td></tr>
+<tr><th>5 €</td><td>800 ¥</td></tr>
+<tr><th>6 €</td><td>960 ¥</td></tr>
+<tr><th>8 €</td><td>1240 ¥</td></tr>
+</table><table>
+<tr><th>10 €</td><td>1600 ¥</td></tr>
+<tr><th>15 €</td><td>2400 ¥</td></tr>
+<tr><th>20 €</td><td>3200 ¥</td></tr>
+<tr><th>25 €</td><td>4000 ¥</td></tr>
+<tr><th>31,25 €</td><td>5000 ¥</td></tr>
+<tr><th>50 €</td><td>8000 ¥</td></tr>
+<tr><th>62,50 €</td><td>10 000 ¥</td></tr>
+<tr><th>75 €</td><td>12 000 ¥</td></tr>
+<tr><th>100 €</td><td>16 000 ¥</td></tr>
+</table></div>
+<p>Au-dela, prenez une calculatrice, c'est plus simple</p>
 
 <h2 id=regles>Les règles à respecter</h2>
 <p>&emsp; Règle n°1 :<br><s>Respecter les règles</s><br>Faire comme tout le monde</p>
